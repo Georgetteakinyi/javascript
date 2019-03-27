@@ -1,0 +1,27 @@
+
+
+fruit_list = ["passion","kiwi","orange","avocado","melon"];
+
+
+function printFruits(fruit_list)
+{
+console.log(fruit_list);
+}
+
+
+(5) ["passion", "kiwi", "orange", "avocado", "melon"]
+
+
+var fruit_index = prompt("from fruit_list pick 0-4");
+
+console.log(fruit_list[fruit_index]);
+
+
+function pickFruit(fruit_list,fruit_index)
+
+ 
+{alert(fruit_list[fruit_index]);}
+
+
+VM524:2 avocado
+undefined
