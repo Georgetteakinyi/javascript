@@ -1,0 +1,37 @@
+
+
+calculatefruitCost(item,quantity)
+
+{fruits={"melons":150.00,"pears":80.00,"apples":60.00,"orange":200.00};
+
+var price=fruits[fruitName]*quantity;
+
+console.log(quantity+" "+ fruitName+" for KES "+price);}
+
+
+undefined
+
+
+
+calculateFruitCost("fruits",2);
+
+
+                                                                       
+2 fruits for KES 200.00
+
+undefined
+
+
+
+calculateFruitCost("fruit",2);
+
+ 2 fruits for KES 400.00
+undefined
+
+                                                                      
+
+
+calculateFruitCost("apple",2);                                           
+
+2 apples for KES 120.00
+undefined
