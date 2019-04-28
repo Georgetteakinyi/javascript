@@ -1,0 +1,29 @@
+
+
+
+ 
+class  Kioskcalc{
+  constructor(fruit,quantity){
+  this.fruit=fruit;
+  this.quantity=quantity;
+  this.fruitPriceList={"ovacado":40,"kiwi":50,"pears":20}
+}
+  
+getTotalCost(){
+  var price=this.fruitPriceList[this.fruit]*this.quantity;
+  return this.quantity + " " + this.fruit + " " + "for KES" + " " + price;
+  
+}  
+  
+ }
+var kioskcalc = new Kioskcalc("ovacado", 3);
+console.log(kioskcalc.getTotalCost());
+var kioskcalc = new Kioskcalc("kiwi",4);
+console.log(kioskcalc.getTotalCost());
+  
+  
+  
+?
+"3 ovacado for KES 120"
+"4 kiwi for KES 200" 
+  
