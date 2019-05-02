@@ -1,0 +1,33 @@
+1 let student = {
+    name: "Georgette Akinyi",
+    years: 21,
+    isStudent:"present"
+};
+
+let {name,years=age,isStudent="true"}=student;
+console.log(name);
+console.log(years);
+console.log(isStudent);
+
+let ask=(question,no,yes)=>(confirm(question))?yes():no()
+console.log(ask("Do you agree?",
+  function(){alert("you agreed.");},
+    function(){alert("you cancelled the execution.");}
+            ));
+let question=ask("Do you agree?",
+()=>alert("You agreed."),
+ ()=>alert("you cancelled the excecution.")); 
+ console.log(question);  
+"Georgette Akinyi"
+21
+"present"
+undefined
+undefined              
+
+
+
+
+
+
+
+   
