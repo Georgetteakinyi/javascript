@@ -1,0 +1,14 @@
+ var body = document.body
+ body.style.backgroundColor = "silver"
+ document.getElementById("title").style.color = "green"
+var h3 = document.getElementById("ajo");
+h3.style.textTransform="upperCase"
+var h3 = document.getElementById("mbuta");
+h3.style.textTransform="upperCase"
+var fruits = document.createElement("li")
+fruits.innerHTML="Avocado"
+fruList.appendChild(fruits)
+var vegetables = document.createElement("li")
+vegetables.innerHTML="Pepper"
+vegList.appendChild(vegetables)
+
