@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Greens Kiosk</title>
+</head>
+<body>
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p>We sell fruits and vegetables</p>
+  <h3>Fruits</h3>
+  <ul id="fruList">
+    <li>Mangoes</li>
+    <li>Bananas</li>
+    <li>Water Melons</li>
+    <input id="name" type="text" >
+    <button id="btn" onClick=fruList.append(addFruit())>FRUITS</button>
+  </ul>
+  <h3>Vegetables</h3>
+  <ul id="vegList">
+    <li>Onions</li>
+    <li>Tomatoes</li>
+    <li>Kales</li>
+    <input id="name" type="text" >
+    <button id="btn" onClick=vegList.append(addVegetable())>VEGETABLES</button>
+  </ul>
+</body>
+</html>
+
+var colorChange =()=>{
+  var title = document.getElementById("title");
+  title.style.color= title.style.color=="green"? "silver":"green"
+
+  };
+  setInterval(colorChange,1000);
+
+var coll = document.getElementsByClassName("Fruits");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("Vegetables");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
